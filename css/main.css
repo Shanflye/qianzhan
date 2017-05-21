@@ -1,3 +1,4 @@
+/*初始化*/
 *{
     box-sizing: border-box;
 }
@@ -11,4 +12,26 @@ body,p,ul,dl,dt,dd,h1,h2,h3,h4,h5,h6{
 }
 .rt{
     float: right;
+}
+a{
+    text-decoration: none;
+}
+/*页头*/
+#top{
+    MIN-width: 1200PX;
+    height: 40px;
+    background-color:#000;
+    font-size: 8px;
+    padding: 0 80px;
+}
+#top a{
+    line-height: 40px;
+    color:#999;
+    margin: 0 10px;
+}
+#top a:hover{
+    color:#ddd;
+}
+#top i{
+    border-left: 1px solid #999999;
 }
