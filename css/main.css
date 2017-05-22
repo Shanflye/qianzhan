@@ -102,7 +102,10 @@ a{
     height: 19px;
     border-radius: 50%;
     background: url(../imgs/bg/bg.png) no-repeat 2px -29px;
+    margin: 15px 15px 0 0;
 }
-#nav>div span{
-
+#nav>div input{
+    margin:15px 0 0 15px ;
+    outline: none;
+    border: none;
 }
