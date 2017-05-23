@@ -64,14 +64,14 @@ a{
     background: url(../imgs/logo.png) no-repeat 2px;
 }
 #nav>ul{
-    width: 675px;
+    width: 830px;
     padding-left: 50px;
     float: left;
     height: 60px;
 }
 #nav>ul>li{
     float: left;
-    width: 75px;
+    width: 80px;
     height: 60px;
     text-align: center;
 }
@@ -83,6 +83,7 @@ a{
     color: #ff0;
 }
 #nav>div{
+    margin-top: 5px;
     float: left;
     width: 250px;
     height: 50px;
@@ -94,7 +95,6 @@ a{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #ffff00;
 }
 #nav>div span{
     float: right;
@@ -105,7 +105,13 @@ a{
     margin: 15px 15px 0 0;
 }
 #nav>div input{
-    margin:15px 0 0 15px ;
+    margin:18px 0 0 15px ;
     outline: none;
     border: none;
+}
+#nav>div>a:hover{
+    background-color: #00f;
+}
+#nav>div>a:hover span{
+    background-position: -17px -29px;
 }
