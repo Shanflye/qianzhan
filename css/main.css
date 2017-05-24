@@ -50,7 +50,7 @@ a{
 }
 /*页面主导航*/
 #nav{
-    min-width:1200px ;
+    min-width:1400px ;
     height: 90px;
     padding: 15px 80px;
     background-color: #4284da;
@@ -74,13 +74,40 @@ a{
     width: 80px;
     height: 60px;
     text-align: center;
+    position: relative;
+}
+#nav>ul>li div{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    width: 280px;
+    height: 170px;
+}
+#nav>ul>li div>ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 #nav li>a{
     line-height: 60px;
     color: #FFFFFF;
 }
-#nav li>a:hover{
+#nav ul>li:hover a{
     color: #ff0;
+}
+#nav ul>li:hover b{
+    transform:rotatez(180deg);
+}
+#nav ul>li b{
+    position: relative;
+    width: 15px;
+    top: 2px;
+    left: 1px;
+    display: inline-block;
+    height: 15px;
+    background: url(../imgs/bg/arraw.png) no-repeat 0 0;
+    transition:all linear .3s;
 }
 #nav>div{
     margin-top: 5px;
@@ -110,8 +137,16 @@ a{
     border: none;
 }
 #nav>div>a:hover{
-    background-color: #00f;
+    background-color: #04f;
 }
 #nav>div>a:hover span{
     background-position: -17px -29px;
+}
+/*banner广告*/
+#banner{
+    width: 1402px;
+    height: 422px;
+    border:1px solid #000;
+    margin: 0 auto;
+    background-color: #f00;
 }
