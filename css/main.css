@@ -2,7 +2,7 @@
 *{
     box-sizing: border-box;
 }
-body,p,ul,dl,dt,dd,h1,h2,h3,h4,h5,h6{
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
     font-family: "microsoft yahei";
@@ -81,25 +81,86 @@ a{
     top: 60px;
     left: 0;
     background-color: #fff;
-    width: 280px;
-    height: 170px;
+    behavior: url(ie-css3.htc);
+    padding: 10px 0 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none;
 }
-#nav>ul>li div>ul{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#nav>ul>li div>i{
+    position: absolute;
+    width: 15px;
+    height: 8px;
+    background: url(../imgs/bg/article_bg.png) no-repeat -35px -273px;
+    top:-7px;
+    left:25px;
 }
-#nav li>a{
+#nav>ul>li.yjy div{
+    width: 458px;
+    height:120px;
+}
+#nav>ul>li.yjy ul>li{
+    width: 30%;
+    float: left;
+    height: 30%;
+    text-align: left;
+}
+#nav>ul>li.dsj ul>li{
+    text-align: left;
+    padding:5px 5px 5px 10px;
+    margin:5px 10px 3px 0;
+    width: 95px;
+    border-radius: 3px;
+}
+#nav>ul>li.dsj ul>li:hover{
+    background-color: #6dbaf1;
+}
+#nav>ul>li.dsj ul>li:hover a{
+    color: #fff;
+}
+#nav>ul>li ul>li a{
+    color: #000;
+}
+#nav>ul>li ul>li a:hover{
+    color: #2244bb;
+}
+#nav>ul>li ul{
+    width: 100%;
+    height: 100%;
+    padding-top: 5px
+}
+#nav ul ul img{
+    width: 30px;
+    vertical-align:middle;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    border:none;
+}
+#nav ul ul img:hover{
+    transform:rotateZ(360deg);
+    -webkit-transform:rotateZ(360deg);
+    -o-transform:rotateZ(360deg);
+    -moz-transform:rotateZ(360deg);
+}
+#nav>ul>li>a{
     line-height: 60px;
     color: #FFFFFF;
 }
-#nav ul>li:hover a{
+#nav>ul>li:hover>a{
     color: #ff0;
 }
-#nav ul>li:hover b{
-    transform:rotatez(180deg);
+#nav>ul>li:hover div{
+    display: block;
 }
-#nav ul>li b{
+#nav>ul>li:hover b{
+    transform:rotatez(180deg);
+    -webkit-transform:rotateZ(180deg);
+    -o-transform:rotateZ(180deg);
+    -moz-transform:rotateZ(180deg);
+}
+#nav>ul>li b{
     position: relative;
     width: 15px;
     top: 2px;
@@ -108,14 +169,20 @@ a{
     height: 15px;
     background: url(../imgs/bg/arraw.png) no-repeat 0 0;
     transition:all linear .3s;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -moz-transition: all linear .3s;
 }
 #nav>div{
     margin-top: 5px;
+    position: relative;
     float: left;
     width: 250px;
     height: 50px;
     border-radius: 30px;
     background-color: #fff;
+    behavior: url(ie-css3.htc);
+    z-index: 5;
 }
 #nav>div>a{
     float: right;
