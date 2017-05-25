@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.21875">
-              <caret line="120" column="19" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.3908873">
+              <caret line="135" column="40" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
               <folding>
                 <element signature="n#li#7;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45722714">
-              <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="273" column="23" selection-start-line="273" selection-start-column="23" selection-end-line="273" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -68,8 +68,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -81,10 +81,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="208" />
-    <option name="y" value="130" />
-    <option name="width" value="1069" />
-    <option name="height" value="815" />
+    <option name="x" value="40" />
+    <option name="width" value="1100" />
+    <option name="height" value="586" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -109,6 +108,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -157,8 +158,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,10 +230,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="208" y="130" width="1069" height="815" extended-state="1" />
+    <frame x="40" y="0" width="1100" height="586" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09686609" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1706642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -656,6 +655,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="273" column="23" selection-start-line="273" selection-start-column="23" selection-end-line="273" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -666,19 +673,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.21875">
-          <caret line="120" column="19" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.3908873">
+          <caret line="135" column="40" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
           <folding>
             <element signature="n#li#7;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45722714">
-          <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
