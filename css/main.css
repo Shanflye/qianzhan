@@ -80,6 +80,7 @@ a{
     position: absolute;
     top: 60px;
     left: 0;
+	z-index:100;
     background-color: #fff;
     behavior: url(ie-css3.htc);
     padding: 10px 0 0 10px;
@@ -186,8 +187,9 @@ a{
 }
 #nav>div>a{
     float: right;
-    width: 50px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
+    margin: 2px 2px 0 0;
     border-radius: 50%;
 }
 #nav>div span{
@@ -196,7 +198,7 @@ a{
     height: 19px;
     border-radius: 50%;
     background: url(../imgs/bg/bg.png) no-repeat 2px -29px;
-    margin: 15px 15px 0 0;
+    margin: 14px 14px 0 0;
 }
 #nav>div input{
     margin:18px 0 0 15px ;
@@ -211,11 +213,9 @@ a{
 }
 /*banner广告*/
 #banner{
-    width: 1202px;
-    height: 422px;
-    border:1px solid #000;
+    width: 1200px;
+    height: 420px;
     margin: 0 auto;
-    background-color: #f00;
     position: relative;
 }
 #banner a{
@@ -226,8 +226,14 @@ a{
     top: 0;
     left: 0;
 }
+#banner .slider>a>span{
+    position: absolute;
+    left:305px;
+    bottom: 8px;
+    font-size:21px;
+}
 #banner .slider>a.active{
-    z-index: 10;
+    z-index: 2;
 }
 #banner .faster_news{
     padding: 10px;
@@ -283,3 +289,23 @@ a{
     left: -17px;
     background-color: #0044ff;
 }
+#banner .slider_dot{
+    position: absolute;
+    z-index: 50;
+    bottom: 15px;
+    right: 50px;
+}
+#banner .slider_dot>li{
+    cursor:pointer;
+    float: left;
+    margin-left: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}
+#banner .slider_dot>li:hover,
+#banner .slider_dot>li.active{
+    background-color: #0dd;
+}
+/*页面主体-今日聚焦*/
