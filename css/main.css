@@ -17,6 +17,11 @@ body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{
 a{
     text-decoration: none;
 }
+.box{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
 /*页头*/
 #top{
     min-width: 1200PX;
@@ -57,26 +62,26 @@ a{
     color:#fff;
     font-size: 18px;
 }
-#nav>a{
+#nav>div>a{
     float: left;
     width: 150px;
     height: 56px;
     background: url(../imgs/logo.png) no-repeat 2px;
 }
-#nav>ul{
-    width: 830px;
+#nav>div>ul{
+    width: 800px;
     padding-left: 50px;
     float: left;
     height: 60px;
 }
-#nav>ul>li{
+#nav>div>ul>li{
     float: left;
     width: 80px;
     height: 60px;
     text-align: center;
     position: relative;
 }
-#nav>ul>li div{
+#nav>div>ul>li div{
     position: absolute;
     top: 60px;
     left: 0;
@@ -88,7 +93,7 @@ a{
     font-size: 16px;
     display: none;
 }
-#nav>ul>li div>i{
+#nav>div>ul>li div>i{
     position: absolute;
     width: 15px;
     height: 8px;
@@ -96,41 +101,41 @@ a{
     top:-7px;
     left:25px;
 }
-#nav>ul>li.yjy div{
+#nav>div>ul>li.yjy div{
     width: 458px;
     height:120px;
 }
-#nav>ul>li.yjy ul>li{
+#nav>div>ul>li.yjy ul>li{
     width: 30%;
     float: left;
     height: 30%;
     text-align: left;
 }
-#nav>ul>li.dsj ul>li{
+#nav>div>ul>li.dsj ul>li{
     text-align: left;
     padding:5px 5px 5px 10px;
     margin:5px 10px 3px 0;
     width: 95px;
     border-radius: 3px;
 }
-#nav>ul>li.dsj ul>li:hover{
+#nav>div>ul>li.dsj ul>li:hover{
     background-color: #6dbaf1;
 }
-#nav>ul>li.dsj ul>li:hover a{
+#nav>div>ul>li.dsj ul>li:hover a{
     color: #fff;
 }
-#nav>ul>li ul>li a{
+#nav>div>ul>li ul>li a{
     color: #000;
 }
-#nav>ul>li ul>li a:hover{
+#nav>div>ul>li ul>li a:hover{
     color: #2244bb;
 }
-#nav>ul>li ul{
+#nav>div>ul>li ul{
     width: 100%;
     height: 100%;
     padding-top: 5px
 }
-#nav ul ul img{
+#nav>div ul ul img{
     width: 30px;
     vertical-align:middle;
     transition: all linear .5s;
@@ -139,29 +144,29 @@ a{
     -moz-transition: all linear .5s;
     border:none;
 }
-#nav ul ul img:hover{
+#nav>div ul ul img:hover{
     transform:rotateZ(360deg);
     -webkit-transform:rotateZ(360deg);
     -o-transform:rotateZ(360deg);
     -moz-transform:rotateZ(360deg);
 }
-#nav>ul>li>a{
+#nav>div>ul>li>a{
     line-height: 60px;
     color: #FFFFFF;
 }
-#nav>ul>li:hover>a{
+#nav>div>ul>li:hover>a{
     color: #ff0;
 }
-#nav>ul>li:hover div{
+#nav>div>ul>li:hover div{
     display: block;
 }
-#nav>ul>li:hover b{
+#nav>div>ul>li:hover b{
     transform:rotatez(180deg);
     -webkit-transform:rotateZ(180deg);
     -o-transform:rotateZ(180deg);
     -moz-transform:rotateZ(180deg);
 }
-#nav>ul>li b{
+#nav>div>ul>li b{
     position: relative;
     width: 15px;
     top: 2px;
@@ -174,7 +179,7 @@ a{
     -o-transition: all linear .3s;
     -moz-transition: all linear .3s;
 }
-#nav>div{
+#nav>div>div{
     margin-top: 5px;
     position: relative;
     float: left;
@@ -185,14 +190,14 @@ a{
     behavior: url(ie-css3.htc);
     z-index: 5;
 }
-#nav>div>a{
+#nav>div>div>a{
     float: right;
     width: 46px;
     height: 46px;
     margin: 2px 2px 0 0;
     border-radius: 50%;
 }
-#nav>div span{
+#nav>div>div span{
     float: right;
     width: 19px;
     height: 19px;
@@ -200,23 +205,20 @@ a{
     background: url(../imgs/bg/bg.png) no-repeat 2px -29px;
     margin: 14px 14px 0 0;
 }
-#nav>div input{
+#nav>div>div input{
     margin:18px 0 0 15px ;
     outline: none;
     border: none;
 }
-#nav>div>a:hover{
+#nav>div>div>a:hover{
     background-color: #04f;
 }
-#nav>div>a:hover span{
+#nav>div>div>a:hover span{
     background-position: -17px -29px;
 }
 /*banner广告*/
 #banner{
-    width: 1200px;
     height: 420px;
-    margin: 0 auto;
-    position: relative;
 }
 #banner a{
     color: #fff;
@@ -309,3 +311,17 @@ a{
     background-color: #0dd;
 }
 /*页面主体-今日聚焦*/
+#main h2{
+    margin-top: 40px;
+    font-weight: normal;
+}
+#main .today_focus>h2>a{
+    float: right;
+    width: 25px;
+    height: 25px;
+    border:1px solid #999;
+    background: url(../imgs/bg/help_skin.png) no-repeat 10px -52px;
+}
+#main .today_focus>h2>a:hover{
+    background: #ddd url(../imgs/bg/help_skin.png) no-repeat 10px -52px;
+}
