@@ -22,6 +22,9 @@ a{
     margin: 0 auto;
     position: relative;
 }
+.ofh{
+    overflow: hidden;
+}
 /*页头*/
 #top{
     min-width: 1200PX;
@@ -363,7 +366,70 @@ a{
     min-height: 40px;
     margin: 15px 0;
 }
-.today_focus>ul span{
+.today_focus span{
     font-size:10px;
     color: #666;
+}
+.today_focus a{
+    color: #000;
+}
+.today_focus a:hover{
+    color:#1291ea ;
+}
+.today_focus>div.lf{
+    margin-top: 20px;
+    width: 780px;
+    padding-top: 20px;
+    border-top:1px solid #ddd;
+}
+.today_focus>div>div{
+    width: 350px;
+}
+.today_focus img{
+    width: 135px;
+}
+.today_focus h4{
+    width: 200px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.today_focus>div li{
+    font-size: 15px;
+    margin: 18px 0;
+}
+.today_focus>div.rt{
+    position: relative;
+    border: 1px solid #ddd;
+    width: 355px;
+    height: 370px;
+    min-height: 400px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+.today_focus>div.rt li>ul{
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding:0 15px;
+    display: none;
+}
+.today_focus>div.rt li>ul>li{
+    overflow : hidden;
+    white-space : nowrap;
+    text-overflow : ellipsis;
+}
+.today_focus>div.rt li.active>ul{
+    display: block;
+}
+.today_focus>div.rt li.active>a{
+    border-color: #1291ea;
+    color: #1291ea;
+}
+.today_focus>div.rt>ul>li>a{
+    border-bottom: 2px solid #999;
+    font-size:18px;
+    padding: 5px 10px;
+}
+.today_focus>div.rt a.middle{
+    margin: 0 40px;
 }
