@@ -223,59 +223,82 @@ a{
 #banner a{
     color: #fff;
 }
-#banner .slider>a{
+ .slider>a{
     position: absolute;
     top: 0;
     left: 0;
 }
-#banner .slider>a>span{
+ .slider>a>span{
     position: absolute;
     left:305px;
     bottom: 8px;
     font-size:21px;
 }
-#banner .slider>a.active{
+ .slider>a.active{
     z-index: 2;
 }
-#banner .faster_news{
-    padding: 10px;
+ .faster_news{
+    padding:36px 10px 10px 0;
     position: absolute;
     width: 300px;
     height: 420px;
     background-color:rgba(0,0,0,.7);
     z-index:20;
+    overflow: hidden;
 }
-#banner .faster_news>a{
+.faster_news>div{
+    overflow: auto;
+    height: 380px;
+    width: 318px;
+    position: relative;
+    padding-left: 10px;
+}
+.faster_news>div>p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#banner .faster_news>div>p>a{
+    font-size: 14px;
+    padding: 5px 30px;
+    border:1px solid #666;
+    color: #1291ea;
+}
+ .faster_news>a{
     background-color: #1291ea;
     padding:2px 10px;
+    position:absolute;
+    top:10px;
+    left: 10px;
 }
-#banner .faster_news>ul{
+ .faster_news>div>ul{
     border-left: 1px solid #666;
-    padding-left: 10px;
-    height: 95%;
+    padding: 0 10px 0 10px;
+    margin:0 20px 20px 0;
 }
-#banner .faster_news>ul>li{
+ .faster_news>div>ul>li{
     position: relative;
     padding-top: 20px;
     height: 25%;
     border-bottom: 1px solid #666;
 }
-#banner .faster_news>ul>li a{
+ #banner .faster_news>div>ul>li a{
     color: #eee;
+     font-size: 15px;
 }
-#banner .faster_news>ul>li a:hover{
+#banner .faster_news>div>ul>li a:hover{
     color: #fff;
 }
-#banner .faster_news>ul>li span{
+ .faster_news>div>ul>li span{
     color: #999;
     font-size: 12px;
 }
-#banner .faster_news>ul>li>i{
+ .faster_news>div>ul>li>i{
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: #749ed9;
     position: absolute;
+    z-index: 1000;
     top: 50%;
     margin-top: -4px;
     left: -15px;
@@ -284,20 +307,20 @@ a{
     -o-transition:all linear .2s;
     -moz-transition:all linear .2s;
 }
-#banner .faster_news>ul>li:hover i{
+ .faster_news>div>ul>li:hover i{
     margin-top: -6px;
     width: 12px;
     height: 12px;
     left: -17px;
     background-color: #0044ff;
 }
-#banner .slider_dot{
+ .slider_dot{
     position: absolute;
     z-index: 50;
     bottom: 15px;
     right: 50px;
 }
-#banner .slider_dot>li{
+ .slider_dot>li{
     cursor:pointer;
     float: left;
     margin-left: 12px;
@@ -306,22 +329,41 @@ a{
     border-radius: 50%;
     border: 1px solid #FFFFFF;
 }
-#banner .slider_dot>li:hover,
-#banner .slider_dot>li.active{
+ .slider_dot>li:hover,
+ .slider_dot>li.active{
     background-color: #0dd;
 }
 /*页面主体-今日聚焦*/
 #main h2{
-    margin-top: 40px;
+    margin: 50px 0 20px;
     font-weight: normal;
 }
-#main .today_focus>h2>a{
+ .today_focus>h2>a{
     float: right;
     width: 25px;
     height: 25px;
     border:1px solid #999;
     background: url(../imgs/bg/help_skin.png) no-repeat 10px -52px;
 }
-#main .today_focus>h2>a:hover{
+ .today_focus>h2>a:hover{
     background: #ddd url(../imgs/bg/help_skin.png) no-repeat 10px -52px;
+}
+ .today_focus>ul>li{
+    width: 30%;
+    float: left;
+}
+ .today_focus>ul>li img{
+    width: 355px;
+}
+ .today_focus>ul>li.middle{
+    margin: 0 60px;
+}
+.today_focus>ul h3 a{
+    font-weight: normal;
+    min-height: 40px;
+    margin: 15px 0;
+}
+.today_focus>ul span{
+    font-size:10px;
+    color: #666;
 }
