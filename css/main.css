@@ -721,3 +721,43 @@ div.about ul li a.qz{
 div.about ul li a.qw{
     background-position: 0 -110px;
 }
+/*悬浮窗*/
+#fix{
+    position: fixed;
+    right: 0;
+    bottom: 115px;
+}
+#fix>li{
+    width: 80px;
+    height: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 13px;
+    background-color: #4284da;
+    border:1px solid #fff;
+    position: relative;
+}
+#fix>li:hover{
+    background-color: #1291ea;
+}
+#fix>li:hover i{
+    display: block;
+}
+#fix i{
+    width: 0;
+    height: 0;
+    border-radius:inherit;
+    display: none;
+    left: -10px;
+    top: 40%;
+    position: absolute;
+    border: 5px solid #fff;
+    border-right-color: #1291ea;
+}
+#fix a{
+    display: block;
+    width: 69px;
+    height: 29px;
+    background:url(../imgs/bg/bg1.png) no-repeat -78px -3px;
+}
