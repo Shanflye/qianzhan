@@ -34,7 +34,7 @@ $(function(){
             $liList.eq(cur).addClass('active').siblings().removeClass('active');}
     };
     carousel($('#banner'));
-    $('div.today_focus>div.rt li').mouseenter(function(){
+    $('div.today_focus>div.rt>ul>li').mouseenter(function(){
         $(this).addClass('active').siblings().removeClass('active');
     })
 });
