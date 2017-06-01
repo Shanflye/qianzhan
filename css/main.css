@@ -1,5 +1,7 @@
 /*初始化*/
 *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{
@@ -56,10 +58,13 @@ li>i{
     margin-right: 5px;
 }
 li>i.top1{
-    background-color: #f00;
+    background-color: #ff7500;
 }
 li>i.top2{
-    background-color: #ff0;
+    background-color: #ffa400;
+}
+li>i.top3{
+    background-color: #fae112;
 }
 /*页头*/
 #top{
@@ -94,7 +99,7 @@ li>i.top2{
 }
 /*页面主导航*/
 #nav{
-    min-width:1425px ;
+    width:100% ;
     height: 90px;
     padding: 15px 0;
     background-color: #4284da;
@@ -531,6 +536,7 @@ li>i.top2{
 /*图标导航条*/
 .icon_nav{
     background-color: #fafafa;
+    height: 160px;
     margin: 30px auto;
     padding: 30px 0;
 }
@@ -640,7 +646,7 @@ li>i.top2{
 }
 /*底部信息*/
 #footer{
-    width: 1430px;
+    width: 100%;
 }
 .yqlj{
     font-size: 12px;
@@ -726,6 +732,7 @@ div.about ul li a.qw{
     position: fixed;
     right: 0;
     bottom: 115px;
+    z-index: 1000;
 }
 #fix>li{
     width: 80px;
@@ -735,13 +742,26 @@ div.about ul li a.qw{
     text-align: center;
     padding-top: 13px;
     background-color: #4284da;
-    border:1px solid #fff;
+    border-bottom:1px solid #fff;
     position: relative;
+}
+#fix>li>div{
+    position: absolute;
+    bottom: 0;
+    color: #000;
+    right: 85px;
+    padding: 15px;
+    display: none;
+    background-color: #fff;
+    -webkit-box-shadow:  0 0 10px #ddd;
+    -moz-box-shadow:  0 0 10px #ddd;
+    -o-box-shadow:  0 0 10px #ddd;
+    box-shadow:  0 0 10px #ddd;
 }
 #fix>li:hover{
     background-color: #1291ea;
 }
-#fix>li:hover i{
+#fix>li:hover i,#fix>li:hover div{
     display: block;
 }
 #fix i{
@@ -752,7 +772,7 @@ div.about ul li a.qw{
     left: -10px;
     top: 40%;
     position: absolute;
-    border: 5px solid #fff;
+    border: 5px solid transparent;
     border-right-color: #1291ea;
 }
 #fix a{

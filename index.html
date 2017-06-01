@@ -1076,9 +1076,23 @@
 </footer>
 <!--右侧悬浮块-->
 <ul id="fix">
-   <li><i></i>关注我们</li>
-   <li><i></i>意见反馈</li>
-   <li><a href="#"></a></li>
+   <li>
+       <i></i>关注我们
+       <div class="scan">
+           <img src="imgs/bg_qr.png" />
+           <p>扫一扫关注我们</p>
+       </div>
+   </li>
+   <li id="suggestion">
+       <i></i>意见反馈
+       <div class="comment">
+           <form>
+            <textarea cols="30" rows="10"></textarea>
+            <button >提交</button>
+           </form>
+       </div>
+   </li>
+   <li><a href="#" id="to_top"></a></li>
 </ul>
 <script src="js/jquery-1.11.3.js"></script>
 <script src="js/main.js"></script>

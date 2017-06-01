@@ -37,4 +37,8 @@ $(function(){
     $('div.today_focus>div.rt>ul>li').mouseenter(function(){
         $(this).addClass('active').siblings().removeClass('active');
     })
+    $('#to_top').click(function(e){
+        e.preventDefault();
+        $('body').animate({scrollTop:0},500);
+    })
 });
