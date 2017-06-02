@@ -60,7 +60,7 @@ body{
     background-color: #fff;
     position: relative;
 }
-#login i{
+#login>i{
     position: absolute;
     height: 84px;
     border-left: 1px solid #dddddd;
@@ -69,10 +69,11 @@ body{
 }
 #login span{
     position: absolute;
-    left:371px;
+    left:372px;
     top: 107px;
     padding: 4px;
-    color: #666;
+    color: #999;
+    font-size:14px;
     z-index: 50;
     background-color: #fff;
 }
@@ -100,7 +101,7 @@ body{
     width: 400px;
     padding: 33px;
 }
-#login div.lf>input{
+ div.lf input.txt{
     width: 330px;
     height: 37px;
     margin: 2px;
@@ -110,7 +111,7 @@ body{
     padding-left: 10px;
     font-family: "microsoft yahei";
 }
-#login div.lf>input:hover{
+#login div.lf input.txt:hover{
     border-color:  #327bbb;
 }
 #login p{
@@ -137,6 +138,78 @@ body{
 }
 #login button:hover{
     background: #4688c2;
+}
+#login>.rt{
+    margin: 28px 20px 0 0 ;
+}
+#login .rt a{
+    margin-top: 10px;
+    width: 170px;
+    height:35px ;
+    line-height: 35px;
+    display: block;
+}
+#login .rt a:hover{
+    opacity: .8;
+}
+a.weibo_login{
+    background-color: #ff7675;
+}
+a.qq_login{
+    background-color: #19a6e8;
+}
+ div.rt a>i{
+    display: inline-block;
+    width: 28px;
+    height: 23px;
+    margin: 5px 5px 5px 10px;
+    vertical-align: bottom;
+    background: url(../imgs/bg/icon2015.png) no-repeat;
+}
+a.weibo_login i{
+    background-position: 0 0;
+}
+/*注册部分*/
+#login div.regi{
+    width: 100%;
+    background-color: #fff;
+    height: 260px;
+}
+#login div.rt a.qq_login i{
+    background-position: 0 -25px;
+}
+#login div.regi p{
+    padding: 0 170px 0 70px;
+    margin:5px 0;
+}
+div.regi img{
+    height: 32px;
+    width: 70px;
+    vertical-align: bottom;
+}
+#login div.regi p>label{
+    margin-left: -70px;
+    display: inline-block;
+    width: 70px;
+}
+#login div.regi p>span{
+    position: static;
+    margin-right: -170px;
+    width: 170px;
+    display: inline-block;
+}
+div.regi p input.txt{
+    width: 285px;
+    height: 32px;
+    margin: 0;
+}
+#vcode{
+    width: 100px;
+}
+#login div.regi button{
+    width: 290px;
+    height: 30px;
+    margin: 0;
 }
 /*底部信息*/
 #footer{
