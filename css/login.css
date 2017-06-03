@@ -87,15 +87,16 @@ body{
 #login ul>li.curr{
     background-color: #fff;
 }
-#login ul>li.curr a{
-    color: #000;
-}
+
 #login ul>li a{
     line-height: 50px;
     color: #dddddd;
 }
 #login ul>li a:hover{
     color: #fff;
+}
+#login ul>li.curr a{
+    color: #000;
 }
 #login div.lf{
     width: 400px;
@@ -210,6 +211,19 @@ div.regi p input.txt{
     width: 290px;
     height: 30px;
     margin: 0;
+}
+/*appdownload*/
+div.appdown{
+    width: 385px;
+    height: 120px;
+    background: url(../imgs/bg/appload.png);
+    margin: 45px auto;
+}
+div.appdown a{
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    margin: 57px 2px;
 }
 /*底部信息*/
 #footer{
