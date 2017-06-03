@@ -32,13 +32,24 @@ $(function(){
             if(next>=$imgList.length)
                 next=0;
             $liList.eq(cur).addClass('active').siblings().removeClass('active');}
-    };
+    }
     carousel($('#banner'));
     $('div.today_focus>div.rt>ul>li').mouseenter(function(){
         $(this).addClass('active').siblings().removeClass('active');
-    })
+    });
     $('#to_top').click(function(e){
         e.preventDefault();
         $('body').animate({scrollTop:0},500);
-    })
+    });
+    var un=sessionStorage.getItem('uname');
+    if(un){
+        $('.sjqz').next().css('color','#fff').html(un+'<a class="quit" href="#">退出</a>');
+        $('a.quit').click(function(e){
+            e.preventDefault();
+            sessionStorage['uname']='';
+            $('.sjqz').next().html('<a href="login.html">登录</a>'+
+            '<i></i>'+
+            '<a href="register.html">注册</a>');
+        })
+    }
 });

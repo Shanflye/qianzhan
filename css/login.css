@@ -82,7 +82,10 @@ body{
     height: 50px;
     background-color: #637077;
     text-align: center;
-    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+#login ul>li:first-child{
+    border: none;
 }
 #login ul>li.curr{
     background-color: #fff;
@@ -185,7 +188,7 @@ a.weibo_login i{
 }
 div.regi img{
     height: 32px;
-    width: 70px;
+    width: 138px;
     vertical-align: bottom;
 }
 #login div.regi p>label{
@@ -197,10 +200,35 @@ div.regi img{
     position: static;
     margin-right: -170px;
     width: 170px;
+    display: none;
+    color: #fff;
+}
+#login div.regi p>span.vsucc {
     display: inline-block;
 }
+#login div.regi p>span.vsucc i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../imgs/bg/icon2015.png) no-repeat 0 -65px;
+}
+#login div.regi p>span.vsucc em{
+    visibility: hidden;
+}
+#login div.regi p>span.vfail {
+    display: inline-block;
+}
+#login div.regi p>span.vfail i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../imgs/bg/icon2015.png) no-repeat 0 -49px;
+}
+#login div.regi p>span.vfail em{
+    color: #f00;
+}
 div.regi p input.txt{
-    width: 285px;
+    width: 265px;
     height: 32px;
     margin: 0;
 }
@@ -211,6 +239,10 @@ div.regi p input.txt{
     width: 290px;
     height: 30px;
     margin: 0;
+}
+#login div.regi button.unuse{
+    background-color: #ddd;
+    cursor:default;
 }
 /*appdownload*/
 div.appdown{

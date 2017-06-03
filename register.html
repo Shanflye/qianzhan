@@ -8,7 +8,7 @@
 <body>
     <div id="header">
         <ul>
-            <li class="lf"><a href="#">前瞻网</a></li>
+            <li class="lf"><a href="index.html">前瞻网</a></li>
             <li class="lf"><a href="#">前瞻数据库</a></li>
             <li class="lf"><a href="#">前瞻研究院</a></li>
             <li class="lf"><a href="#">研究报告</a></li>
@@ -23,41 +23,40 @@
     <ul class="ofh">
         <li class="lf"><a href="login.html">前瞻网登录</a></li>
         <li class="lf curr"><a href="register.html">免费注册</a></li>
-        <li class="lf"><a href="#">下载APP</a></li>
+        <li class="lf"><a href="appdownload.html">下载APP</a></li>
     </ul>
     <div class="lf regi">
         <form>
             <p>
                 <label for="utel">手机号:</label>
                 <input class="txt" type="text" placeholder="请输入手机号" id="utel"/>
-                <span><i></i>请输入正确手机号</span>
+                <span><i></i><em>请输入正确手机号</em></span>
             </p>
             <p>
                 <label for="vcode">验证码:</label>
                 <input class="txt" type="text" id="vcode"/>
-                <img src="" />
-                <a href="#">换一张</a>
-                <span><i></i>验证码不正确</span>
+                <img src="data/vcode.php" />
+                <a href="#" id="revcode">换一张</a>
+                <span><i></i><em>验证码不正确</em></span>
             </p>
             <p>
                 <label for="uname">用户名:</label>
                 <input class="txt" type="text" placeholder="用户名称" id="uname"/>
-                <span><i></i>不少于4个字母</span>
+                <span><i></i><em>不少于4个字母或汉字</em></span>
             </p>
             <p>
                 <label class="txt" for="upwd">登录密码:</label>
-                <input class="txt" type="text" placeholder="登录密码" id="upwd"/>
-                <span><i></i>请输入至少6位数密码</span>
+                <input class="txt" type="password" placeholder="登录密码" id="upwd"/>
+                <span><i></i><em>请输入至少6位数密码</em></span>
             </p>
             <p>
                 <button>注册</button>
             </p>
             <p>
-                <input type="checkbox" id="isAgree"/>
+                <input type="checkbox" id="isAgree" checked/>
                 <a href="#">《前瞻网服务条款》</a>
                 <a href="#">《免责声明》</a>
             </p>
-
         </form>
     </div>
 </div>
@@ -73,5 +72,7 @@
     </p>
     <p>Copyright © 1998-2017　FORWARD 前瞻网　All rights reserved.　粤ICP备11021828号-2　增值电信业务经营许可证：粤B2-20130734</p>
 </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/register.js"></script>
 </body>
 </html>
